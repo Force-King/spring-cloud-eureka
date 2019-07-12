@@ -1,1 +1,1 @@
-# qin_coder_repository
+# Spring Cloud registry
