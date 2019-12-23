@@ -2,7 +2,7 @@
 
 ## spring cloud 注册中心，服务注册与发现
 
-支持集群模式、ELK日志
+#### 支持集群模式、ELK日志
 
 
 ### 编译打包jar
@@ -25,7 +25,7 @@ $ nohup java -jar framework-eureka.jar --spring.profiles.active=peer2 > nohup2.l
 $ nohup java -jar framework-eureka.jar --spring.profiles.active=peer3 > nohup3.log &
 ````
 
-### eureka集群线上环境启动步骤：
+### 线上环境启动步骤：
 
 #### 1. hosts文件配置
 vi /etc/hosts
