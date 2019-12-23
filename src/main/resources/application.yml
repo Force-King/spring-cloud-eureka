@@ -7,10 +7,10 @@ server:
   port: 8000
 eureka:
   instance:
-    hostname: peer1
+    hostname: eureka.peer1
   client:
     serviceUrl:
-      defaultZone: http://peer2:8001/eureka/,http://peer3:8002/eureka/
+      defaultZone: http://eureka.peer2:8001/eureka/,http://eureka.peer3:8002/eureka/
 ---
 spring:
   application:
@@ -20,10 +20,10 @@ server:
   port: 8001
 eureka:
   instance:
-    hostname: peer2
+    hostname: eureka.peer2
   client:
     serviceUrl:
-      defaultZone: http://peer1:8000/eureka/,http://peer3:8002/eureka/
+      defaultZone: http://eureka.peer1:8000/eureka/,http://eureka.peer3:8002/eureka/
 ---
 spring:
   application:
@@ -33,7 +33,7 @@ server:
   port: 8002
 eureka:
   instance:
-    hostname: peer3
+    hostname: eureka.peer3
   client:
     serviceUrl:
-      defaultZone: http://peer1:8000/eureka/,http://peer2:8001/eureka/
+      defaultZone: http://eureka.peer1:8000/eureka/,http://eureka.peer2:8001/eureka/
