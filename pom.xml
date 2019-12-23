@@ -45,6 +45,7 @@
     </dependencyManagement>
 
     <build>
+        <finalName>framework-eureka</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
