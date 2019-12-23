@@ -30,9 +30,9 @@ $ nohup java -jar framework-eureka.jar --spring.profiles.active=peer3 > nohup3.l
 #### 1. hosts文件配置
 vi /etc/hosts
 ````
-172.30.100.71 eureka.peer1
-172.30.100.72 eureka.peer2
-172.30.100.73 eureka.peer3
+192.168.100.1 eureka.peer1
+192.168.100.2 eureka.peer2
+192.168.100.3 eureka.peer3
 ````
 
 #### 2. 创建集群启动脚本
